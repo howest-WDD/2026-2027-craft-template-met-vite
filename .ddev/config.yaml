@@ -1,19 +1,25 @@
-name: 2026-2027-craft-template-zonder-vite
+name: 2026-2027-craft-template-met-vite
 type: craftcms
 docroot: web
-php_version: "8.4"
+php_version: '8.4'
 webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
 database:
-    type: mysql
-    version: "8.0"
+  type: mysql
+  version: '8.0'
 use_dns_when_possible: true
-composer_version: "2"
+composer_version: '2'
 web_environment: []
-nodejs_version: "24"
+nodejs_version: '24'
 corepack_enable: false
+
+web_extra_daemons:
+  # Run Vite in a separate process
+  - name: 'vite'
+    command: 'npm install && npm run dev'
+    directory: /var/www/html
 
 # Key features of DDEV's config.yaml:
 
