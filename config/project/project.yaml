@@ -1,4 +1,4 @@
-dateModified: 1789117748
+dateModified: 1789569780
 email:
   fromEmail: test@test.be
   fromName: 'Lege template'
@@ -7,6 +7,11 @@ meta:
   __names__:
     929fd45f-bf45-4147-9135-70b892e1d185: 'Lege template' # Lege template
     c0f23bbb-8a22-484d-ae4b-5f6b046ee7e2: 'Lege template' # Lege template
+plugins:
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true
