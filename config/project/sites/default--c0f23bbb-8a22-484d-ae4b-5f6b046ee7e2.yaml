@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en
+name: 'Lege template'
+primary: true
+siteGroup: 929fd45f-bf45-4147-9135-70b892e1d185 # Lege template
+sortOrder: 1
